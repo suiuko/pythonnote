@@ -287,4 +287,51 @@ xiaoming = {"name":"小明",
             "age":18,
             "gender":True,
             "height":1.75}
+print(xiaoming)
 ```
+
+### 3.2.1 字典基本使用
+
+```python
+xiaoming_dict = {"name":"小明"}
+
+# 1. 取值
+print(xiaoming_dict["name"])
+
+# 2. 增加/修改
+# 如果key不存在，会新增键值对
+xiaoming_dict["age"] = 18
+# 如果key存在，会修改已经存在的键值对
+xiaoming_dict["name"] = "小小明"
+
+# 3. 删除
+xiaoming_dict.pop("name")
+
+print(xiaoming_dict)
+```
+
+### 3.2.2 字典常用操作
+
+|         |      |
+| ------- | ---- |
+| update  | 合并字典 |
+|         |      |
+|         |      |
+
+```python
+xiaoming_dict = {"name":"小明",
+                 "age":18}
+# 1. 统计键值对的数量
+print(len(xiaoming_dict))
+
+# 2. 合并字典
+temp_dict = {"height":1.75}
+# 注意：如果被合并的字典中包含已经存在的键值对，会覆盖原有的键值对
+xiaoming_dict.update(temp_dict)
+
+# 3. 清空字典
+xiaoming_dict.clear()
+```
+
+### 3.3 字典循环遍历
+
