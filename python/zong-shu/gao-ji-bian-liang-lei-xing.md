@@ -193,5 +193,43 @@ for name in name_list:
 
 通过 迭代便利，在循环体内部，针对列表内的元素，执行相同的操作
 
+## 2 元组
 
+### 2.1 元组的定义
+
+`tuple` （元组） 与 列表类似，不同之处在于 元组的 元素不能修改
+
+元素的索引从`0` 开始，元组用 `()` 来定义
+
+元组表示多个元素组成的序列
+
+### 2.2 元组常用操作
+
+```python
+# 创建元组
+info_tuple = ("zhangsan",18,1.75)
+
+# 1. 取值和取索引
+print(info_tuple[0])
+print(info_tuple.index("zhangsan")) # 已经知道数据的内容，需要知道索引
+
+# 2. 统计计数
+print(info_tuple.count("zhangsan"))
+
+# 统计元组中包含元素的个数
+print(len(info_tuple))
+```
+
+### 2.3 循环遍历
+
+取值 就是从 元组 中获取存储在指定位置的数据
+
+遍历 就是 从头到尾 依次 从 元组 中获取数据
+
+```python
+# for 循环内部使用的变量 in 元组
+for item in info:
+    循环内部针对元组元素进行操作
+    print(item)
+```
 
