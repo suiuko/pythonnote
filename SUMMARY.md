@@ -9,4 +9,4 @@
 
 ## 🍐 Linux
 
-* [linux](<README (1).md>)
+* [linux](README.md)
