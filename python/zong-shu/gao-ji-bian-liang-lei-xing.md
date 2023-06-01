@@ -136,3 +136,6 @@ print("zhangsan 出现了 %d 次" %count)
 # remove 删除元素，多个的话删除左边第一个
 name_list.remove("wangwu")
 ```
+
+#### 列表排序
+
