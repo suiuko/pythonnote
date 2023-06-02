@@ -388,3 +388,30 @@ for card_info in card_list:
 
 也可以使用 `for` 循环遍历字符串中每一个字符
 
+```python
+string = "hello"
+for c in string:
+    print(c)
+
+
+str1 = "hello python"
+str2 = "我是大西瓜"
+
+for char in str2:
+    print(char)
+```
+
+`len(字符串)` 获取字符串的长度\
+`字符串.count(字符串)` 获取 小字符串 是第一次出现的索引
+
+### 4.2 字符串常用操作
+
+index方法：某一个子字符串出现的位置； 如果使用此方法传递的子字符串不存在，会报错。
+
+#### 4.2.1 判断类型
+
+| 方法 | 说明 |
+| -- | -- |
+|    |    |
+|    |    |
+|    |    |
