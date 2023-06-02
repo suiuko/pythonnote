@@ -335,3 +335,40 @@ xiaoming_dict.clear()
 
 ### 3.3 字典循环遍历
 
+```python
+# 字典的遍历 
+xiaoming_dict = {"name": "xiaoming",
+                 "qq":"1234",
+                 "phone":"1000"}
+
+# 变量K是 每次循环中，获取到的键值对的key
+
+for k in xiaoming_dict:
+    print("%s : %s" %(k,xiaoming_dict[k]))
+    
+```
+
+### 3.4 应用场景
+
+使用多个键值对，存储描述一个 物体 的相关信息 -- 描述更复杂的数据信息
+
+将 多个字典 放在 一个列表 中，再进行遍历，在循环体内部针对每一个字典进行 相同的处理
+
+可以将 多个 字典 存放在一个 列表 中
+
+```python
+card_list = [{"name": "xiaoming",
+                 "qq":"1234",
+                 "phone":"1000"},
+            {
+                "name":"lisi",
+                "qq":"54321",
+                "phone":"1111"}
+            ]
+
+for card_info in card_list:
+    print(card_info)
+
+# 需要注意的是，字典是无序的对象集合，输出可能顺序不一样
+# 但是列表是有序的对象集合
+```
