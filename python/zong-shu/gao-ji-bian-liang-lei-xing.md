@@ -315,8 +315,6 @@ print(xiaoming_dict)
 |         |      |
 | ------- | ---- |
 | update  | 合并字典 |
-|         |      |
-|         |      |
 
 ```python
 xiaoming_dict = {"name":"小明",
@@ -548,4 +546,59 @@ num_str[-1::-1]  # 输出 9876543210
 | \*           | \["Hi!"] \* 4         | \['Hi!', 'Hi!', 'Hi!', 'Hi!'] | 重复      | 字符串、列表、元组    |
 | in           | 3 in (1, 2, 3)        | True                          | 元素是否存在  | 字符串、列表、元组、字典 |
 | not in       | 4 not in (1, 2, 3)    | True                          | 元素是否不存在 | 字符串、列表、元组、字典 |
-| > >= == < <= | (1, 2, 3) < (2, 2, 3) | True                          | 元素比较    | 字符串、列表、元组    |
+| >,>=,==,<,<= | (1, 2, 3) < (2, 2, 3) | True                          | 元素比较    | 字符串、列表、元组    |
+
+> \+号操作会产生新一个列表，\
+> 但是extend操作是调用方法将原来的列表进行修改\
+> append 可以在后面追加新的列表
+
+```python
+[1,2] + [3,4]
+#out [1,2,3,4]
+
+t_list = [1,2]
+t_list.extend([3,4])
+# out [1,2,3,4]
+
+t_list.append(0)
+#out [1,2,3,4,0]
+
+t_list.append([8,9])
+#out [1,2,3,4,0[8,9]]
+
+```
+
+#### 成员运算符
+
+成员运算符用于 测试 序列中是否包含制定的 成员
+
+`in` 在对字典操作时，判断的是 `字典的键` \
+`in` 和 `not in` 被称为成员运算符
+
+<table data-header-hidden><thead><tr><th width="109">运算符</th><th>描述</th><th>实例</th></tr></thead><tbody><tr><td>in</td><td>如果在指定的序列中找到值返回 True，否则返回 False</td><td><code>3 in (1, 2, 3)</code> 返回 <code>True</code></td></tr><tr><td>not in</td><td>如果在指定的序列中没有找到值返回 True，否则返回 False</td><td><code>3 not in (1, 2, 3)</code> 返回 <code>False</code></td></tr></tbody></table>
+
+注意：在对 字典 操作时，判断的是 字典的键
+
+## 5.4 完整的for循环语法
+
+```python
+for 变量 in 集合：
+    循环体代码
+else:
+    没有通过break 推出循环，循环结束后，会执行的代码 
+```
+
+```python
+for num in [1, 2, 3]:
+
+    print(num)
+
+    if num == 2:
+        break
+else:
+    # 如果循环体内部使用break退出了循环
+    # else 下方的代码就不会被执行
+    print("会执行吗？")
+
+print("循环结束")
+```
