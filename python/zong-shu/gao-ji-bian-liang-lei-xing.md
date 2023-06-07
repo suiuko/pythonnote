@@ -644,3 +644,39 @@ else:
 
 print("循环结束")
 ```
+
+### 6 名片管理系统
+
+{% content-ref url="../base-page/gao-ji-bian-liang-lei-xing/ming-pian-guan-li-xi-tong.md" %}
+[ming-pian-guan-li-xi-tong.md](../base-page/gao-ji-bian-liang-lei-xing/ming-pian-guan-li-xi-tong.md)
+{% endcontent-ref %}
+
+### 7 LINUX上的Shebang符号(#!)
+
+`#!` 叫做 `shebang` 通常在 `unix` 系统脚本中 第一行开始使用， 指明 执行这个脚本文件的解释程序
+
+#### 7.1 使用Shebang的步骤
+
+1. 使用 `which` 查询 `python3` 解释器所在路径
+
+```
+$ which python3
+```
+
+2. 修改要运行的 **主 python 文件**，在第一行增加以下内容
+
+```
+#! /usr/bin/python3
+```
+
+3. 修改 **主 python 文件** 的文件权限，增加执行权限
+
+```
+$ chmod +x cards_main.py
+```
+
+4. 在需要时执行程序即可
+
+```
+./cards_main.py
+```
