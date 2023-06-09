@@ -70,9 +70,46 @@ def measure():
 
     # 小括号可以省略 return (temp, wetness)
     return temp, wetness # 没有小括号是返回了元组
-result = measure() # result 是元组
+
+# result 是元组
+result = measure() 
 print(result)
+
+# 需要单独的处理温度或者湿度  --- 不方便
+print(result[0])
+print(result[1])
+
+# 如果函数返回的类型是元组，同时希望单独的处理元组中的元素
+# 可以使用多个变量，一次接受函数的返回结果
+gl_temp,gle_wetness = measure()
+print(gl_temp)
+print(gle_wetness)
 ```
 
 使用 `return` 时，元组可以不用小括号
+
+技巧：将一个元组 使用 赋值语句 同时赋值给多个变量
+
+#### 【面试题】交换两个数字
+
+题目要求：
+
+有两个整数变量 `a = 6`, `b = 100`不使用其他变量，**交换两个变量的值**
+
+```python
+# 第一种方法
+a = a + b
+b = a - b
+a = a - b
+
+# 第二种方法
+# python专属，利用元组
+
+a,b =(b,a)
+
+```
+
+## 3 函数的参数--进阶
+
+### 3.1 不可变和可变的参数
 
