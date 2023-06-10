@@ -119,3 +119,124 @@ a,b =(b,a)
 
 如果传递的参数是可变类型，在函数内部，使用方法修改了数据的内容，同样会影响到外部的数据
 
+#### 3.1.1 面试题  关于+=操作
+
+在python中，<mark style="color:blue;">**列表变量**</mark>调用 += 本质上是在执行列表变量的extend方法，不会修改变量的引用
+
+```python
+def demo(num,num_list):
+    print("函数开始")
+    
+    num += num
+    # 列表变量使用 + 不会做相加再赋值的操作
+    # num_list = num_list + numlist
+    # 本质上是在调用列表的extend方法
+    # num_list += num_list
+    num_list.extend(num_list)
+    
+    print(num)
+    print(num_list)
+    
+    print("函数完成")
+    
+gl_num = 9
+gl_list = [1,2,3]
+demo(gl_num,gl_list)
+print(gl_num)
+print(gl_list)
+```
+
+### 3.2 缺省参数
+
+定义函数时，可以给 **某个参数** 指定一个**默认值**，具有默认值的参数就叫做 **缺省参数**
+
+```python
+gl_list = [6,3,9]
+
+# 默认升序
+gl_list.sort()
+
+# 降序
+gl_list.sort(reverse=True) # reverse就是缺省函数，默认false
+
+print(gl_list)
+
+```
+
+#### 3.2.1 指定函数的缺省参数
+
+在参数后使用赋值语句，可以指定参数的缺省值
+
+```python
+def print_info(name, gender=True):
+
+    gender_text = "男生"
+    if not gender:
+        gender_text = "女生"
+
+    print("%s 是 %s" % (name, gender_text))
+ # 在指定缺省函数的默认值时，应该使用最常见的值作为默认值   
+print_info("小明")
+print_info("小妹",False)
+```
+
+#### 3.2.2 缺省参数注意事项
+
+1. 缺省参数的定义位置\
+   必须保证 带有默认值的缺省参数 在参数列表末尾
+2. 调用带有多个缺省参数的函数\
+   在调用函数时，如果有多个缺省参数，需要制定参数名。
+
+### 3.3 多值参数
+
+#### 3.3.1 定义支持多值参数的函数
+
+* `python` 中有 **两种** 多值参数：
+  * 参数名前增加 **一个** `*` 可以接收 **元组**
+  * 参数名前增加 **两个** `*` 可以接收 **字典**
+* 一般在给多值参数命名时，**习惯**使用以下两个名字
+  * `*args` —— 存放 **元组** 参数，前面有一个 `*`
+  * `**kwargs` —— 存放 **字典** 参数，前面有两个 `*`
+* `args` 是 `arguments` 的缩写，有变量的含义
+* `kw` 是 `keyword` 的缩写，`kwargs` 可以记忆 **键值对参数**
+
+```python
+def demo(num, *args, **kwargs):
+
+    print(num)
+    print(args)
+    print(kwargs)
+
+
+demo(1, 2, 3, 4, 5, name="小明", age=18, gender=True)
+```
+
+#### 3.3.2 多值参数案例 —— 计算任意多个数字的和
+
+需求：1. 定义一个函数，可以接受 任意多个整数；
+
+### 3.4  元组和字典的拆包
+
+* 在调用带有多值参数的函数时，如果希望：
+  * 将一个 **元组变量**，直接传递给 `args`
+  * 将一个 **字典变量**，直接传递给 `kwargs`
+* 就可以使用 **拆包**，简化参数的传递，**拆包** 的方式是：
+  * 在 **元组变量前**，增加 **一个** `*`
+  * 在 **字典变量前**，增加 **两个** `*`
+
+```python
+def demo(*args, **kwargs):
+
+    print(args)
+    print(kwargs)
+
+
+# 需要将一个元组变量/字典变量传递给函数对应的参数
+gl_nums = (1, 2, 3)
+gl_xiaoming = {"name": "小明", "age": 18}
+
+# 会把 num_tuple 和 xiaoming 作为元组传递个 args
+# demo(gl_nums, gl_xiaoming)
+demo(*gl_nums, **gl_xiaoming)
+
+```
