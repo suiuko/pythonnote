@@ -13,6 +13,7 @@
   * [函数进阶](python/base-page/han-shu-jin-jie.md)
   * [面向对象(OOP)](python/base-page/mian-xiang-dui-xiang-oop/README.md)
     * [面向对象基础语法](python/base-page/mian-xiang-dui-xiang-oop/mian-xiang-dui-xiang-ji-chu-yu-fa.md)
+    * [面向对象封装案例](python/base-page/mian-xiang-dui-xiang-oop/mian-xiang-dui-xiang-feng-zhuang-an-li.md)
 
 ## 🍐 Linux
 
