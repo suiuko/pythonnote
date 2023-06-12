@@ -18,6 +18,7 @@
     * [私有属性和私有方法](python/base-page/mian-xiang-dui-xiang-oop/si-you-shu-xing-he-si-you-fang-fa/README.md)
       * [如何调用私有方法](python/base-page/mian-xiang-dui-xiang-oop/si-you-shu-xing-he-si-you-fang-fa/ru-he-tiao-yong-si-you-fang-fa.md)
     * [继承](python/base-page/mian-xiang-dui-xiang-oop/ji-cheng.md)
+    * [多态](python/base-page/mian-xiang-dui-xiang-oop/duo-tai.md)
 
 ## 🍐 Linux
 
