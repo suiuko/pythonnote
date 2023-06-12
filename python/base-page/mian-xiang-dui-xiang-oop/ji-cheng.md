@@ -217,3 +217,31 @@ b.demo()
 [ru-he-tiao-yong-si-you-fang-fa.md](si-you-shu-xing-he-si-you-fang-fa/ru-he-tiao-yong-si-you-fang-fa.md)
 {% endcontent-ref %}
 
+## 2 多继承
+
+**子类** 可以拥有 **多个父类**，并且具有 **所有父类** 的 **属性** 和 **方法**
+
+```python
+class 子类名(父类名 1,父类名 2 ...)
+    pass
+```
+
+### 2.1 多继承的使用注意事项
+
+**开发时，应该尽量避免这种容易产生混淆的情况！** —— 如果 **父类之间** 存在 **同名的属性或者方法**，应该 **尽量避免** 使用多继承
+
+### 2.1.2 python 中的 MRO ---- 方法搜索顺序
+
+Python 中针对 类 提供了一个内置属性 `__mro__` 可以查看方法搜索的顺序
+
+### 2.2 新式类与旧式(经典)类
+
+* **新式类**：以 `object` 为基类的类，**推荐使用**
+* **经典类**：不以 `object` 为基类的类，**不推荐使用**
+
+**新式类** 和 **经典类** 在多继承时 —— **会影响到方法的搜索顺序**
+
+<pre class="language-python"><code class="lang-python"><strong># 新式类：
+</strong><strong>class 类名(object):
+</strong>    pass
+</code></pre>
