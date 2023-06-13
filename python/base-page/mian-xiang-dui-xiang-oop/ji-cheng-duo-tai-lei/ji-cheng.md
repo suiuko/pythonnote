@@ -6,7 +6,7 @@
 
 **继承的概念**：**子类** 拥有 **父类** 的所有 **方法** 和 **属性**
 
-<figure><img src="../../../.gitbook/assets/011_继承对比图示.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/011_继承对比图示.png" alt=""><figcaption></figcaption></figure>
 
 #### 1.1.1 继承的语法
 
@@ -170,7 +170,7 @@ def bark(self):
 > * **私有属性、方法** 是对象的隐私，不对外公开，**外界** 以及 **子类** 都不能直接访问
 > * **私有属性、方法** 通常用于做一些内部的事情
 
-<figure><img src="../../../.gitbook/assets/013_父类的私有属性和私有方法.png" alt="" width="220"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/013_父类的私有属性和私有方法.png" alt="" width="220"><figcaption></figcaption></figure>
 
 * `B` 的对象不能直接访问 `__num2` 属性
 * `B` 的对象不能在 `demo` 方法内访问 `__num2` 属性
@@ -213,8 +213,8 @@ b.demo()
 
 #### 1.3.1 如何调用私有方法和属性？
 
-{% content-ref url="si-you-shu-xing-he-si-you-fang-fa/ru-he-tiao-yong-si-you-fang-fa.md" %}
-[ru-he-tiao-yong-si-you-fang-fa.md](si-you-shu-xing-he-si-you-fang-fa/ru-he-tiao-yong-si-you-fang-fa.md)
+{% content-ref url="../si-you-shu-xing-he-si-you-fang-fa/ru-he-tiao-yong-si-you-fang-fa.md" %}
+[ru-he-tiao-yong-si-you-fang-fa.md](../si-you-shu-xing-he-si-you-fang-fa/ru-he-tiao-yong-si-you-fang-fa.md)
 {% endcontent-ref %}
 
 ## 2 多继承
