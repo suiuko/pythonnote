@@ -23,6 +23,7 @@
       * [类](python/base-page/mian-xiang-dui-xiang-oop/ji-cheng-duo-tai-lei/lei.md)
       * [方法综合案例](python/base-page/mian-xiang-dui-xiang-oop/ji-cheng-duo-tai-lei/fang-fa-zong-he-an-li.md)
       * [单例](python/base-page/mian-xiang-dui-xiang-oop/ji-cheng-duo-tai-lei/dan-li.md)
+  * [异常](python/base-page/yi-chang.md)
 
 ## 🍐 Linux
 
