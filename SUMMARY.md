@@ -25,6 +25,8 @@
       * [单例](python/base-page/mian-xiang-dui-xiang-oop/ji-cheng-duo-tai-lei/dan-li.md)
   * [异常](python/base-page/yi-chang.md)
   * [模块](python/base-page/mo-kuai.md)
+  * [包 package](python/base-page/bao-package.md)
+  * [(了解)发布模块](python/base-page/le-jie-fa-bu-mo-kuai.md)
 
 ## 🍐 Linux
 
