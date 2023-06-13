@@ -22,3 +22,41 @@
 2. 定义 `xtd` 继承`dog` 并且重写 game 方法
 3. 定义`Person` 类，并且封装一个 **和狗玩** 的方法
 
+```python
+class Dog(object):
+    def __init__(self,name) -> None:
+        
+        self.name = name
+    
+    def game(self):
+        print("%s playing" %self.name)
+        
+class XiaoTianDog(Dog):
+    def game(self):
+        print("%s playing on the sky" %self.name)
+        
+class Person(object):
+    def __init__(self,name) -> None:
+        self.name = name
+    
+    def game_with_dog(self,dog):
+        print("%s and %s are playing very happy"%(self.name, dog.name))
+        
+        # 让狗玩耍
+        dog.game()
+        
+# 1. 创建一个狗对象
+# wangcai = Dog("旺财")
+wangcai = XiaoTianDog("飞天旺财")
+
+# 2. 创建一个小明对象
+xiaoming = Person("小明")
+
+# 3. 让小明调用和狗玩的方法
+xiaoming.game_with_dog(wangcai)
+    
+    
+# 输出
+# 小明 and 飞天旺财 are playing very happy
+# 飞天旺财 playing on the sky
+```
