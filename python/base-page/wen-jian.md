@@ -154,3 +154,60 @@ while True:
 file_read.close()
 file_write.close()
 ```
+
+## 3 文件/目录的常用管理操作
+
+* 在 **终端** / **文件浏览器**、 中可以执行常规的 **文件** / **目录** 管理操作，例如：
+  * 创建、重命名、删除、改变路径、查看目录内容、……
+* 在 `Python` 中，如果希望通过程序实现上述功能，需要导入 `os` 模块
+
+### 2.1 文件操作
+
+<table data-header-hidden><thead><tr><th width="141"></th><th width="127"></th><th></th></tr></thead><tbody><tr><td>rename</td><td>重命名文件</td><td><code>os.rename(源文件名, 目标文件名)</code></td></tr><tr><td>remove</td><td>删除文件</td><td><code>os.remove(文件名)</code></td></tr></tbody></table>
+
+### 2.2 目录操作
+
+<table data-header-hidden><thead><tr><th width="139">方法名</th><th>说明</th><th>示例</th></tr></thead><tbody><tr><td>listdir</td><td>目录列表</td><td><code>os.listdir(目录名)</code></td></tr><tr><td>mkdir</td><td>创建目录</td><td><code>os.mkdir(目录名)</code></td></tr><tr><td>rmdir</td><td>删除目录</td><td><code>os.rmdir(目录名)</code></td></tr><tr><td>getcwd</td><td>获取当前目录</td><td><code>os.getcwd()</code></td></tr><tr><td>chdir</td><td>修改工作目录</td><td><code>os.chdir(目标目录)</code></td></tr><tr><td>path.isdir</td><td>判断是否是文件</td><td><code>os.path.isdir(文件路径)</code></td></tr></tbody></table>
+
+> 提示：文件或者目录操作都支持 **相对路径** 和 **绝对路径**
+
+### 4.1 ASCII 编码和 UNICODE 编码
+
+**`ASCII` 编码**
+
+* 计算机中只有 `256` 个 `ASCII` 字符
+* 一个 `ASCII` 在内存中占用 **1 个字节** 的空间
+  * `8` 个 `0/1` 的排列组合方式一共有 `256` 种，也就是 `2 ** 8`
+
+<figure><img src="../../.gitbook/assets/001_ASCII编码表1.jpg" alt=""><figcaption></figcaption></figure>
+
+### 4.2 Ptyhon 2.x 中如何使用中文
+
+> Python 2.x 默认使用 `ASCII` 编码格式 Python 3.x 默认使用 `UTF-8` 编码格式
+
+* 在 Python 2.x 文件的 **第一行** 增加以下代码，解释器会以 `utf-8` 编码来处理 python 文件
+
+```python
+# *-* coding:utf8 *-*
+
+也可以：
+
+# coding=utf8
+```
+
+#### **4.2.1 unicode 字符串**
+
+* 在 `Python 2.x` 中，即使指定了文件使用 `UTF-8` 的编码格式，但是在遍历字符串时，仍然会 **以字节为单位遍历** 字符串
+* 要能够 **正确的遍历字符串**，在定义字符串时，需要 **在字符串的引号前**，增加一个小写字母 `u`，告诉解释器这是一个 `unicode` 字符串（使用 `UTF-8` 编码格式的字符串）
+
+```python
+# *-* coding:utf8 *-*
+
+# 在字符串前，增加一个 `u` 表示这个字符串是一个 utf8 字符串
+hello_str = u"你好世界"
+
+print(hello_str)
+
+for c in hello_str:
+    print(c)
+```
