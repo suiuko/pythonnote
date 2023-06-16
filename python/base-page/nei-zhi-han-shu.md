@@ -1,5 +1,9 @@
 # 内置函数
 
+{% embed url="https://www.runoob.com/python3/python3-built-in-functions.html" %}
+python内置函数
+{% endembed %}
+
 ### range()
 
 Python3 range() 返回的是一个可迭代对象（类型是对象），而不是列表类型。
