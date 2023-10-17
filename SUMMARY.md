@@ -30,6 +30,8 @@
   * [(了解)发布模块](python/base-page/le-jie-fa-bu-mo-kuai.md)
   * [文件](python/base-page/wen-jian.md)
   * [eval 函数](python/base-page/eval-han-shu.md)
+* [小知识点](python/xiao-zhi-shi-dian/README.md)
+  * [for-if-and-or-is-in-==总结](python/xiao-zhi-shi-dian/forifandorisin-zong-jie.md)
 
 ## 🍐 Linux
 
