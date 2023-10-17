@@ -4,8 +4,8 @@
 
 ## 🥭 python
 
-* [🍑 Base page](<README (2).md>)
-  * [循环语句](python/zong-shu/master.md)
+* [🍑 Base page](<README (2) (1).md>)
+  * [循环语句](<README (2).md>)
   * [函数基础](python/zong-shu/han-shu-ji-chu.md)
   * [内置函数](python/base-page/nei-zhi-han-shu.md)
   * [高级变量类型](python/zong-shu/gao-ji-bian-liang-lei-xing.md)
