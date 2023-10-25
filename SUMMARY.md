@@ -5,6 +5,7 @@
 ## 🥭 python
 
 * [🍑 Base page](<README (2) (1).md>)
+  * [数据类型](python/base-page/shu-ju-lei-xing.md)
   * [循环语句](<README (2).md>)
   * [函数基础](python/zong-shu/han-shu-ji-chu.md)
   * [内置函数](python/base-page/nei-zhi-han-shu.md)
