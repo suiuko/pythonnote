@@ -1,4 +1,4 @@
-# 高级变量类型
+# 高级变量类型（详细）
 
 ## 目标
 
@@ -647,8 +647,8 @@ print("循环结束")
 
 ### 6 名片管理系统
 
-{% content-ref url="../base-page/gao-ji-bian-liang-lei-xing/ming-pian-guan-li-xi-tong.md" %}
-[ming-pian-guan-li-xi-tong.md](../base-page/gao-ji-bian-liang-lei-xing/ming-pian-guan-li-xi-tong.md)
+{% content-ref url="ming-pian-guan-li-xi-tong.md" %}
+[ming-pian-guan-li-xi-tong.md](ming-pian-guan-li-xi-tong.md)
 {% endcontent-ref %}
 
 ### 7 LINUX上的Shebang符号(#!)
