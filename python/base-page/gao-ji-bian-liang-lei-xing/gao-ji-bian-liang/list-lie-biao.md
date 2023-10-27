@@ -1,8 +1,6 @@
 # list 列表
 
-## 1. 列表
-
-### 1.1 列表的定义
+## 1.1 列表的定义
 
 `list` 列表再其他语言中通常叫做 数组
 
@@ -24,9 +22,9 @@ len(列表) 获取列表的长度 n+1
 name_list =["zhangsan","lisi","wangwu"]
 ```
 
-### 1.2 列表的基本操作
+## 1.2 列表的基本操作
 
-<table><thead><tr><th width="115">分类</th><th width="189">关键词/函数/方法</th><th>说明</th></tr></thead><tbody><tr><td>1增加 </td><td>list.insert(索引,数据)</td><td>在指定位置插入数据</td></tr><tr><td></td><td>list.append(数据)</td><td>在末尾追加数据</td></tr><tr><td></td><td>list.extend(list2)</td><td>在列表2 的数据追加到列表</td></tr><tr><td>2修改</td><td>list[索引] = 数据</td><td>修改指定索引的数据</td></tr><tr><td>3删除</td><td>del list[索引]</td><td>删除指定索引的数据</td></tr><tr><td></td><td>list.remove[数据]</td><td>删除第一个出现的指定数据</td></tr><tr><td></td><td>list.pop</td><td>删除末尾数据</td></tr><tr><td></td><td>list.pop(索引)</td><td>删除指定索引数据</td></tr><tr><td></td><td>list.clear</td><td>清空列表</td></tr><tr><td>4统计</td><td>len(list)</td><td>列表长度</td></tr><tr><td></td><td>list.count(数据)</td><td>数据在列表中出现的次数</td></tr><tr><td>5排序</td><td>list.sort()</td><td>升序排序</td></tr><tr><td></td><td>list.sort(reverse=True)</td><td>降序排序</td></tr><tr><td></td><td>list.reverse()</td><td>反转</td></tr></tbody></table>
+<table><thead><tr><th width="115">分类</th><th width="189">关键词/函数/方法</th><th>说明</th></tr></thead><tbody><tr><td>1增加 </td><td>list.insert(索引,数据)</td><td>在指定位置插入数据</td></tr><tr><td></td><td>list.append(数据)</td><td>在末尾追加数据</td></tr><tr><td></td><td>list.extend(list2)</td><td>在列表2 的数据追加到列表</td></tr><tr><td>2修改</td><td>list[索引] = 数据</td><td>修改指定索引的数据</td></tr><tr><td>3删除</td><td>del list[索引]</td><td>删除指定索引的数据</td></tr><tr><td></td><td>list.remove[数据]</td><td>删除第一个出现的指定数据</td></tr><tr><td></td><td>list.pop</td><td>删除末尾数据</td></tr><tr><td></td><td>list.pop(索引)</td><td>删除指定索引数据</td></tr><tr><td></td><td>list.clear</td><td>清空列表</td></tr><tr><td>4统计</td><td>len(list)</td><td>列表长度</td></tr><tr><td></td><td>list.count(数据)</td><td>数据在列表中出现的次数</td></tr><tr><td>5排序</td><td>list.sort(cmp = None, key=None,reverse =False)</td><td><p>cpm -- 可选参数，指定该参数会使用该参数的方法进行排序。<br>key -- 主要是用来进行比较的元素，只有一个参数，具体的函数的参数就是取自于可迭代对象中，指定可迭代对象中的一个元素来进行排序。</p><p>reverse -- 排序规则， true降序，false升序（默认）</p></td></tr><tr><td></td><td>list.sort(reverse=True)</td><td>降序排序</td></tr><tr><td></td><td>list.reverse()</td><td>反转</td></tr><tr><td>6 比较</td><td>cmp(list1,list2)</td><td>比较两个列表的元素</td></tr><tr><td>7 查找</td><td>list.index(obj)</td><td>从列表中找出某个值第一个匹配项的索引位置</td></tr></tbody></table>
 
 ```python
 name_list = ["zhangsan","lisi","wangwu"]
@@ -123,27 +121,13 @@ print(name_list)
 print(num_list)
 ```
 
-#### 关键字、函数和方法
-
-关键字是python 内置的、具有特殊意义的标识符
-
-> 关键字后面不需要使用括号
-
-函数封装了独立功能，可以直接调用
-
-> 函数名(参数) ，函数需要死记硬背
-
-方法类似于函数，但是方法需要通过 对象 来调用，表示针对这个 对象 要做的操作
-
-> 对象.方法名(参数)  ； 在变量后面输入 `.` 然后选择这个变量要执行的操作
-
-### 1.3 循环遍历
+## 1.3 循环遍历
 
 遍历就是从头到尾 依次 从 列表中获取数据
 
 在循环体内部 针对 每个元素， 执行相同操作
 
-#### 1.3.1 for 循环
+### 1.3.1 for 循环
 
 ```python
 # for 循环内部使用的变量 in 列表
@@ -153,3 +137,11 @@ for name in name_list:
 ```
 
 通过 迭代便利，在循环体内部，针对列表内的元素，执行相同的操作
+
+### 1.3.2 while
+
+```python
+list 
+i=0
+while i < len(list)
+```

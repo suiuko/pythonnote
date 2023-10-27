@@ -17,6 +17,8 @@
   * [高级变量类型](python/base-page/gao-ji-bian-liang-lei-xing/README.md)
     * [高级变量](python/base-page/gao-ji-bian-liang-lei-xing/gao-ji-bian-liang/README.md)
       * [list 列表](python/base-page/gao-ji-bian-liang-lei-xing/gao-ji-bian-liang/list-lie-biao.md)
+      * [tuple 元组](python/base-page/gao-ji-bian-liang-lei-xing/gao-ji-bian-liang/tuple-yuan-zu.md)
+      * [字典](python/base-page/gao-ji-bian-liang-lei-xing/gao-ji-bian-liang/zi-dian.md)
     * [名片管理系统](python/base-page/gao-ji-bian-liang-lei-xing/ming-pian-guan-li-xi-tong.md)
     * [变量进阶](python/base-page/gao-ji-bian-liang-lei-xing/bian-liang-jin-jie.md)
   * [函数基础](python/base-page/han-shu-ji-chu/README.md)
