@@ -202,25 +202,24 @@ def print_lint(char,times):
     print(char * times)
 ```
 
-```python
-# 打印多行
+<pre class="language-python"><code class="lang-python"># 打印多行
 
 def print_line(char,times):
     print(char * times)
     
-def print_lines(cahr,times,row1):
-    """
+<strong>def print_lines(char,times,row1):
+</strong>    """
     
     :param char: 分割线使用的分隔字符
     :param times: 分割线重复的次数
     """
     row = 0
-    while row < row1:
+    while row &#x3C; row1:
         print_line(char,times)
         row +=1
 
 print_lines("-",20,5)
-```
+</code></pre>
 
 ## 6 使用模块中的函数
 
@@ -269,3 +268,16 @@ import 分割线模块.py
 
 pyc文件是变异过的文件，会存放在缓存文件夹中
 
+### 6.4 模块导入
+
+#### 1. import 导入
+
+#### 2. from ... import 导入
+
+```python
+from modname import name1,name2
+```
+
+#### 3. from ... import \*
+
+所有模块全部导入
