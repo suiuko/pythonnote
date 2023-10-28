@@ -44,6 +44,7 @@
   * [包 package](python/base-page/bao-package.md)
   * [(了解)发布模块](python/base-page/le-jie-fa-bu-mo-kuai.md)
   * [eval 函数](python/base-page/eval-han-shu.md)
+  * [正则表达式](python/base-page/zheng-ze-biao-da-shi.md)
 * [小知识点](python/xiao-zhi-shi-dian/README.md)
   * [for-if-and-or-is-in-==总结](python/xiao-zhi-shi-dian/forifandorisin-zong-jie.md)
 
